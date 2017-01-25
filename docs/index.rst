@@ -6,9 +6,20 @@
 Welcome to ELEKTRONN2's documentation!
 ======================================
 
+User guide
+----------
+
 .. toctree::
    :maxdepth: 3
-   :caption: API documentation:
+
+   examples
+
+
+API documentation
+-----------------
+
+.. toctree::
+   :maxdepth: 3
 
    source/elektronn2.neuromancer
    source/elektronn2.training
