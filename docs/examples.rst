@@ -7,6 +7,16 @@ Examples
 .. important::
    This page is heavily outdated and under construction. There are many sections that have to be rewritten from ELEKTRONN (legacy) specifics to fit to ELEKTRONN2.
 
+Video embed test
+================
+
+.. raw:: html
+
+   <video width="100%" controls>
+    <source src="_videos/barrier_training_dual.webm" type="video/webm">
+   </video>
+
+
 This page gives examples for different use cases of ELELKTRONN2. Besides, the examples are intended to give an idea of how custom network architectures could be created and trained without the built-in pipeline. To understand the examples, basic knowledge of neural networks (e.g. from :ref:`training`) is recommended. The details of the configuration parameters are described :ref:`here <pipeline>`.
 
 .. contents::
@@ -419,7 +429,7 @@ Often training data (e.g. lots of images of digits) are vastly available but nob
        cnn2.trainingStep(d, l, mode="SGD")
 
 
-..
+
 RNN Example
 ===========
 
