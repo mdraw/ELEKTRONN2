@@ -13,7 +13,7 @@ Video embed test
 .. raw:: html
 
    <video width="100%" controls>
-    <source src="_videos/barrier_training_dual.webm" type="video/webm">
+    <source src="https://aww.moe/j7ghj9.webm" type="video/webm">
    </video>
 
 
