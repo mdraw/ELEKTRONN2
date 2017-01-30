@@ -46,10 +46,10 @@ Getting Started
 .. important::
    This section is out of date and has to be revised for ELEKTRONN2
 
-1. Download `example training data <http://elektronn2.org/downloads/neuro_data.zip>`_  (~100MB)::
+1. Download `example training data <http://elektronn.org/downloads/neuro_data.zip>`_  (~100MB)::
 
-   wget http://elektronn2.org/downloads/neuro_data.zip
-   unzip neuro_data.zip
+      wget http://elektronn.org/downloads/neuro_data.zip
+      unzip neuro_data.zip
 
 2. Edit ``save_path, data_path, label_path, preview_data_path`` in the config file
    ``neuro_3d_config.py`` in ELEKTRONN2's ``examples`` folder
@@ -97,8 +97,8 @@ use the same patch (more or less) and soon over-fit to that one.
    axis swapped to ``(z, (ch,) x, y)`` order, zero-padded to the same size and
    cropped such that only the area in which labels and images are both
    available after considering the CNN offset. If labels cannot be effectively
-    used for training (because either the image surplus is too small or your FOV
-    is too large) a note will be printed.
+   used for training (because either the image surplus is too small or your FOV
+   is too large) a note will be printed.
 
 Additionally to the 3 pairs of images and labels, 2 small image cubes for live
 previews are included. Note that preview data must be a **list** of one or
@@ -233,13 +233,13 @@ Results & Comments
 .. raw:: html
 
    <video width="100%" controls>
-    <source src="https://aww.moe/j7ghj9.webm" type="video/webm">
+      <source src="https://aww.moe/j7ghj9.webm" type="video/webm">
    </video>
 
    Left: preview predictions of this example model trained over 2h.
    Right: a more complex model composed of 9 convolutional layers, ``1.5M``
    parameters and ``83`` lateral FOV, trained on 9 cubes for 16h.
-   \
+\
 
 .. _mnist:
 
@@ -254,7 +254,7 @@ State of the art benchmarks for comparison can be found
 
 .. note::
    The data will be automatically downloaded but can also be downloaded manually
-   from `here <http://www.elektronn2.org/downloads/mnist.pkl.gz>`_.
+   from `here <http://www.elektronn.org/downloads/mnist.pkl.gz>`_.
 
 CNN with built-in Pipeline
 --------------------------
