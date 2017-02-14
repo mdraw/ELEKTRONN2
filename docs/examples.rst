@@ -400,7 +400,7 @@ Results & Comments
 
 .. raw:: html
 
-   <video width="100%" controls>
+   <video width="100%" controls autoplay loop>
       <source src="https://aww.moe/j7ghj9.webm" type="video/webm">
    </video>
 
