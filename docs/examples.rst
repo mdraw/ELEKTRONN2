@@ -14,7 +14,7 @@ Examples
    ELEKTRONN2.
 
 
-This page gives examples for different use cases of ELELKTRONN2. Besides, the
+This page gives examples for different use cases of ELEKTRONN2. Besides, the
 examples are intended to give an idea of how custom network architectures
 could be created and trained without the built-in pipeline. To understand the
 examples, basic knowledge of neural networks (e.g. from :ref:`training`) is
@@ -127,9 +127,17 @@ Example output::
    Total number of trainable parameters: 307,109.
    Computational Cost per pixel: 34.6 Mega Ops
 
-The whole model is also plotted as graph in figure 12.1.
+The whole model can also be plotted as a graph by using the
+``elektronn2.utils.d3viz.visualize_model()`` method::
 
-.. TODO: insert figure 12.1
+   >>> from elektronn2.utils.d3viz import visualise_model
+   >>> visualise_model(model, '/tmp/modelgraph')
+
+.. figure::  _images/example_model_graph.png
+   :scale: 80 %
+
+   Model graph of the example CNN. Inputs are yellow and outputs are blue. |br|
+   Some node classes are represented by special shapes, the default shape is oval.
 
 Interactive usage of the ``Model`` and ``Node`` objects
 -------------------------------------------------------
@@ -348,11 +356,12 @@ Config::
   :ref:`warped <warping>`.
 
 
-  .. figure::  _images/debugGetCNNBatch.png
-   :align:   center
+.. figure::  _images/debugGetCNNBatch.png
 
-   Left: the input data. Centre: the labels, note the offset, Right: overlay of
-   data with labels, here you can check whether they are properly registered.
+   Left: The input data. |br|
+   Centre: The labels, note the offset. |br|
+   Right: Overlay of data with labels, here you can check whether they are
+   properly registered.
 
 During training initialisation a debug plot of a randomly sampled batch is made
 to check whether the training data is presented to the CNN in the intended way
@@ -394,9 +403,6 @@ Results & Comments
   increase by more layers than more maxpooling) predictions contain a lot of
   "clutter" within wide cell bodies: there the CNN does not see the the cell
   outline which is apparently an important clue to solve this task.
-
-.. .. figure::  _images/barrier_training_dual.gif
-..    :align:   center
 
 .. raw:: html
 
@@ -594,7 +600,7 @@ solving the difficult (warped) training set at the expense of generalization to
 The actual boost in (validation) performance comes when the warping is turned
 off and the training is fine-tuned with a smaller learning rate. Wait until the
 validation error approximately plateaus, then interrupt the training using
-``ctrl+c``::
+``Ctrl+c``::
 
    >>> data.warp_on = False # Turn off warping
    >>> setlr 0.002          # Lower learning rate
