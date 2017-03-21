@@ -14,7 +14,7 @@ prompt_toolkit>=1.0.3
 jedi>=0.9.0
 psutil
 
-git+https://github.com/knossos-project/knossos_utils
+git+https://github.com/mdraw/knossos_utils  # Pure-Python fork. Extensions are not needed for sphinx build.
 
 enum34
 numba
