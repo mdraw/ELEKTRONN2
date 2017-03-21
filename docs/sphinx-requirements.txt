@@ -14,5 +14,10 @@ prompt_toolkit>=1.0.3
 jedi>=0.9.0
 psutil
 
+git+https://github.com/knossos-project/knossos_utils
+
+enum34
+numba
+
 sphinx
 sphinx_rtd_theme
